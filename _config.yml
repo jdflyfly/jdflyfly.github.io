@@ -5,7 +5,7 @@ email: jd249326109@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   just mark something down.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://jdflyfly.github.io" # the base hostname & protocol for your site
 twitter_username: jd46027040
 github_username:  jdflyfly
 
