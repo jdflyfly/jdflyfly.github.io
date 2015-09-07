@@ -5,6 +5,8 @@ date:   2015-09-06 19:11:00
 categories: android
 ---
 
+* TOC
+{:toc}
 
 # 安卓入门
 
@@ -61,6 +63,20 @@ categories: android
                   android:required="true" />
     ...
 </manifest>
+```
+
+```html
+<html>
+	<body>
+		Hello World!
+	</body>
+</html>
+```
+
+```c
+	int a;
+	a = 3+5;
+	printf("hello world");
 ```
 
 ### 平台版本
