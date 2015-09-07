@@ -15,6 +15,6 @@ kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
   syntax_highlighter: rouge
 
-#markdown: redcarpet
-#redcarpet:
+# markdown: redcarpet
+# redcarpet:
 #  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]

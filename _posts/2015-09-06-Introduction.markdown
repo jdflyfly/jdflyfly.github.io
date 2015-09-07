@@ -65,19 +65,14 @@ categories: android
 </manifest>
 ```
 
-```html
-<html>
-	<body>
-		Hello World!
-	</body>
-</html>
-```
+{% highlight xml %}
+<manifest ... >
+    <uses-feature android:name="android.hardware.sensor.compass"
+                  android:required="true" />
+    ...
+</manifest>
+{% endhighlight %}
 
-```c
-	int a;
-	a = 3+5;
-	printf("hello world");
-```
 
 ### 平台版本
 
