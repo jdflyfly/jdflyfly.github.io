@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Golang string"
+date:   2015-09-10 19:11:00
+categories: golang
+---
+
+* TOC
+{:toc}
+
+
+
+
+
+{% highlight C++ %}
+
+{% endhighlight %}
