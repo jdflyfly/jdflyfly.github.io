@@ -58,6 +58,25 @@ onTouch()与onTouchEvent()都是用户处理触摸事件的API。
 
 
 
+## Activity触摸事件处理
+
+* Activity中的dispatchTouchEvent会将触摸事件传递给Activity所包含的根视图，即ViewGroup的dispatchTouchEvent()。
+* Activity中的onTouchEvent是Activity自身对触摸事件的处理。
+
+## View触摸事件处理
+
+* view的dispatchTouchEvent()中分发事件的时候，会先将事件分配给onTouch()进行处理，然后才分配给onTouchEvent()进行处理。 如果onTouch()对触摸事件进行了处理，并且返回true；那么，该触摸事件就不会分配在分配给onTouchEvent()进行处理了。
+* view的onTouchEvent()是Android系统提供的，用于处理触摸事件的接口；在onTouchEvent()中会进行一系列的动作，例如获取焦点、设置按下状态、调用onClick、调用onLongClick等。
+
+
+## ViewGroup触摸事件处理
+
+* ViewGroup中的dispatchTouchEvent()会将触摸事件进行递归遍历传递。ViewGroup会遍历它的所有孩子，对每个孩子都递归的调用dispatchTouchEvent()来分发触摸事件。
+* 如果ViewGroup的某个孩子没有接受(消费或者拦截)ACTION_DOWN事件；那么，ACTION_MOVE和ACTION_UP等事件也一定不会分发给这个孩子。
+* ViewGroup的onInterceptTouchEvent()默认返回false。
+
+
+
 ## 参考
 
 [博客1](http://wangkuiwu.github.io/2015/01/01/TouchEvent-Introduce/)
